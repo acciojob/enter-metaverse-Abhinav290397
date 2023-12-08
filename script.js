@@ -2,6 +2,9 @@
 const Btn = document.querySelector("#enterBtn");
 const P = document.querySelector("#status");
 Btn.addEventListener("click",function(){
-	P.innerText = "Entered Metaverse"
+	P.remove();
+	let H1 = document.createElement("h1");
+	H1.innerText = "Entered Metaverse";
+	P.replaceWith(H1);
 });
 
