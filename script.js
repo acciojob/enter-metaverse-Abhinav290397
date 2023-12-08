@@ -1,9 +1,10 @@
 //your JS code here. If required.
 const Btn = document.querySelector("#enterBtn");
-const P = document.querySelector("status");
+const P = document.querySelector("#status");
 Btn.addEventListener("click",function(){
-	P.classList.remove();
+	P.remove();
 	let H1 = document.createElement("h1");
 	H1.innerText = "Entered Metaverse";
+	body.appendChild(H1);
 });
 
